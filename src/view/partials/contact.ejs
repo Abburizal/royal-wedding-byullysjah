@@ -1,0 +1,376 @@
+<!-- Contact & CTA Section -->
+<section id="contact" class="py-20 lg:py-28 bg-gradient-to-br from-white to-ivory-50">
+    <div class="container-custom">
+        <!-- Section Header -->
+        <div class="text-center mb-20">
+            <div class="scroll-animate">
+                <div class="flex items-center justify-center mb-6">
+                    <div class="h-px bg-gradient-to-r from-transparent via-gold-950 to-transparent w-20"></div>
+                    <div class="mx-4 w-6 h-6 bg-gold-950 rounded-full flex items-center justify-center">
+                        <i class="fas fa-envelope text-white text-xs"></i>
+                    </div>
+                    <div class="h-px bg-gradient-to-r from-transparent via-gold-950 to-transparent w-20"></div>
+                </div>
+                
+                <h2 class="font-playfair text-4xl md:text-5xl lg:text-6xl font-bold text-navy-950 mb-4">
+                    Mulai Perjalanan Impian
+                </h2>
+                
+                <p class="text-lg md:text-xl text-neutral-600 max-w-3xl mx-auto leading-relaxed">
+                    Siap merencanakan pernikahan impian? Hubungi kami untuk konsultasi gratis dan wujudkan momen istimewa Anda bersama Royal Wedding by Ully Sjah.
+                </p>
+            </div>
+        </div>
+
+        <div class="grid lg:grid-cols-2 gap-16">
+            <!-- Professional Contact Form -->
+            <div class="scroll-animate">
+                <div class="bg-white rounded-2xl p-8 md:p-10 shadow-soft border border-ivory-100">
+                    <div class="mb-8">
+                        <h3 class="text-2xl font-playfair font-bold text-navy-950 mb-2">Konsultasi Gratis</h3>
+                        <p class="text-neutral-600">Ceritakan tentang pernikahan impian Anda, dan kami akan membantu mewujudkannya.</p>
+                    </div>
+
+                    <form id="contactForm" onsubmit="submitForm(event)" class="space-y-6">
+                        <!-- Name and Email Row -->
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div class="form-group">
+                                <label class="block text-navy-950 font-semibold mb-2">
+                                    Nama Lengkap <span class="text-red-500">*</span>
+                                </label>
+                                <div class="relative">
+                                    <input 
+                                        type="text" 
+                                        name="name" 
+                                        id="name"
+                                        required 
+                                        class="w-full px-4 py-4 pl-12 border border-neutral-200 rounded-xl focus:border-gold-500 focus:outline-none focus:ring-2 focus:ring-gold-200 transition-all duration-300"
+                                        placeholder="Masukkan nama lengkap Anda"
+                                    >
+                                    <i class="fas fa-user absolute left-4 top-1/2 transform -translate-y-1/2 text-neutral-400"></i>
+                                </div>
+                                <span class="error-message text-red-500 text-sm hidden">Nama lengkap wajib diisi</span>
+                            </div>
+                            <div class="form-group">
+                                <label class="block text-navy-950 font-semibold mb-2">
+                                    Email <span class="text-red-500">*</span>
+                                </label>
+                                <div class="relative">
+                                    <input 
+                                        type="email" 
+                                        name="email" 
+                                        id="email"
+                                        required 
+                                        class="w-full px-4 py-4 pl-12 border border-neutral-200 rounded-xl focus:border-gold-500 focus:outline-none focus:ring-2 focus:ring-gold-200 transition-all duration-300"
+                                        placeholder="email@example.com"
+                                    >
+                                    <i class="fas fa-envelope absolute left-4 top-1/2 transform -translate-y-1/2 text-neutral-400"></i>
+                                </div>
+                                <span class="error-message text-red-500 text-sm hidden">Email yang valid wajib diisi</span>
+                            </div>
+                        </div>
+
+                        <!-- Phone and Wedding Date Row -->
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div class="form-group">
+                                <label class="block text-navy-950 font-semibold mb-2">
+                                    No. Telepon <span class="text-red-500">*</span>
+                                </label>
+                                <div class="relative">
+                                    <input 
+                                        type="tel" 
+                                        name="phone" 
+                                        id="phone"
+                                        required 
+                                        class="w-full px-4 py-4 pl-12 border border-neutral-200 rounded-xl focus:border-gold-500 focus:outline-none focus:ring-2 focus:ring-gold-200 transition-all duration-300"
+                                        placeholder="08XX-XXXX-XXXX"
+                                    >
+                                    <i class="fas fa-phone absolute left-4 top-1/2 transform -translate-y-1/2 text-neutral-400"></i>
+                                </div>
+                                <span class="error-message text-red-500 text-sm hidden">Nomor telepon wajib diisi</span>
+                            </div>
+                            <div class="form-group">
+                                <label class="block text-navy-950 font-semibold mb-2">
+                                    Tanggal Pernikahan (Rencana)
+                                </label>
+                                <div class="relative">
+                                    <input 
+                                        type="date" 
+                                        name="weddingDate" 
+                                        id="weddingDate"
+                                        class="w-full px-4 py-4 pl-12 border border-neutral-200 rounded-xl focus:border-gold-500 focus:outline-none focus:ring-2 focus:ring-gold-200 transition-all duration-300"
+                                    >
+                                    <i class="fas fa-calendar absolute left-4 top-1/2 transform -translate-y-1/2 text-neutral-400"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Budget Range -->
+                        <div class="form-group">
+                            <label class="block text-navy-950 font-semibold mb-2">
+                                Estimasi Budget
+                            </label>
+                            <div class="relative">
+                                <select 
+                                    name="budget" 
+                                    id="budget"
+                                    class="w-full px-4 py-4 pl-12 border border-neutral-200 rounded-xl focus:border-gold-500 focus:outline-none focus:ring-2 focus:ring-gold-200 transition-all duration-300 appearance-none bg-white"
+                                >
+                                    <option value="">Pilih range budget</option>
+                                    <option value="50-100jt">Rp 50 - 100 Juta</option>
+                                    <option value="100-200jt">Rp 100 - 200 Juta</option>
+                                    <option value="200-500jt">Rp 200 - 500 Juta</option>
+                                    <option value="500jt+">Rp 500 Juta+</option>
+                                    <option value="custom">Budget Custom</option>
+                                </select>
+                                <i class="fas fa-money-bill-wave absolute left-4 top-1/2 transform -translate-y-1/2 text-neutral-400"></i>
+                                <i class="fas fa-chevron-down absolute right-4 top-1/2 transform -translate-y-1/2 text-neutral-400"></i>
+                            </div>
+                        </div>
+
+                        <!-- Package Interest -->
+                        <div class="form-group">
+                            <label class="block text-navy-950 font-semibold mb-2">
+                                Paket yang Diminati
+                            </label>
+                            <div class="relative">
+                                <select 
+                                    name="package" 
+                                    id="package"
+                                    class="w-full px-4 py-4 pl-12 border border-neutral-200 rounded-xl focus:border-gold-500 focus:outline-none focus:ring-2 focus:ring-gold-200 transition-all duration-300 appearance-none bg-white"
+                                >
+                                    <option value="">Pilih paket layanan</option>
+                                    <option value="Royal Package">Royal Package - Full Service</option>
+                                    <option value="Diamond Package">Diamond Package - Premium</option>
+                                    <option value="Gold Package">Gold Package - Essential</option>
+                                    <option value="Partial Planning">Partial Planning</option>
+                                    <option value="Day Coordination">Day Coordination Only</option>
+                                    <option value="Custom Package">Custom Package</option>
+                                </select>
+                                <i class="fas fa-crown absolute left-4 top-1/2 transform -translate-y-1/2 text-neutral-400"></i>
+                                <i class="fas fa-chevron-down absolute right-4 top-1/2 transform -translate-y-1/2 text-neutral-400"></i>
+                            </div>
+                        </div>
+
+                        <!-- Guest Count -->
+                        <div class="form-group">
+                            <label class="block text-navy-950 font-semibold mb-2">
+                                Estimasi Jumlah Tamu
+                            </label>
+                            <div class="relative">
+                                <select 
+                                    name="guestCount" 
+                                    id="guestCount"
+                                    class="w-full px-4 py-4 pl-12 border border-neutral-200 rounded-xl focus:border-gold-500 focus:outline-none focus:ring-2 focus:ring-gold-200 transition-all duration-300 appearance-none bg-white"
+                                >
+                                    <option value="">Pilih jumlah tamu</option>
+                                    <option value="50-100">50 - 100 tamu</option>
+                                    <option value="100-200">100 - 200 tamu</option>
+                                    <option value="200-300">200 - 300 tamu</option>
+                                    <option value="300-500">300 - 500 tamu</option>
+                                    <option value="500+">500+ tamu</option>
+                                </select>
+                                <i class="fas fa-users absolute left-4 top-1/2 transform -translate-y-1/2 text-neutral-400"></i>
+                                <i class="fas fa-chevron-down absolute right-4 top-1/2 transform -translate-y-1/2 text-neutral-400"></i>
+                            </div>
+                        </div>
+
+                        <!-- Message -->
+                        <div class="form-group">
+                            <label class="block text-navy-950 font-semibold mb-2">
+                                Ceritakan Tentang Pernikahan Impian Anda
+                            </label>
+                            <div class="relative">
+                                <textarea 
+                                    name="message" 
+                                    id="message"
+                                    rows="5" 
+                                    class="w-full px-4 py-4 pl-12 border border-neutral-200 rounded-xl focus:border-gold-500 focus:outline-none focus:ring-2 focus:ring-gold-200 transition-all duration-300 resize-none"
+                                    placeholder="Ceritakan visi, tema, dan detail khusus yang Anda inginkan untuk pernikahan impian Anda..."
+                                ></textarea>
+                                <i class="fas fa-comment-dots absolute left-4 top-6 text-neutral-400"></i>
+                            </div>
+                        </div>
+
+                        <!-- Privacy Consent -->
+                        <div class="flex items-start space-x-3">
+                            <input 
+                                type="checkbox" 
+                                id="privacy" 
+                                name="privacy" 
+                                required
+                                class="mt-1 w-5 h-5 text-gold-500 border-neutral-300 rounded focus:ring-gold-200"
+                            >
+                            <label for="privacy" class="text-sm text-neutral-600 leading-relaxed">
+                                Saya setuju dengan <a href="#" class="text-gold-950 hover:underline">kebijakan privasi</a> dan memberikan izin untuk dihubungi terkait konsultasi pernikahan. <span class="text-red-500">*</span>
+                            </label>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <button 
+                            type="submit" 
+                            id="submitBtn"
+                            class="w-full bg-gradient-to-r from-gold-950 to-gold-900 text-white py-4 rounded-xl font-semibold hover:shadow-elevated transition-all duration-300 transform hover:-translate-y-1 text-lg relative overflow-hidden group"
+                        >
+                            <span class="relative z-10 flex items-center justify-center">
+                                <i class="fas fa-paper-plane mr-2"></i>
+                                Kirim Konsultasi Gratis
+                            </span>
+                            <div class="absolute inset-0 bg-gradient-to-r from-gold-900 to-gold-800 transform translate-x-full group-hover:translate-x-0 transition-transform duration-300"></div>
+                        </button>
+
+                        <!-- Success Message -->
+                        <div id="successMessage" class="hidden bg-green-50 border border-green-200 rounded-xl p-4">
+                            <div class="flex items-center">
+                                <i class="fas fa-check-circle text-green-500 mr-3"></i>
+                                <span class="text-green-700">Terima kasih! Pesan Anda telah terkirim. Kami akan menghubungi Anda dalam 24 jam.</span>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Contact Information -->
+            <div class="scroll-animate" style="animation-delay: 0.2s;">
+                <div class="bg-gradient-to-br from-navy-950 to-navy-900 text-white rounded-2xl p-8 md:p-10 h-full">
+                    <div class="mb-8">
+                        <h3 class="text-2xl font-playfair font-bold mb-2">Informasi Kontak</h3>
+                        <p class="text-ivory-200">Hubungi kami melalui berbagai channel yang tersedia</p>
+                    </div>
+                    
+                    <div class="space-y-8">
+                        <!-- Address -->
+                        <div class="flex items-start group">
+                            <div class="w-12 h-12 bg-gold-950 rounded-xl flex items-center justify-center mr-4 group-hover:bg-gold-900 transition-colors duration-300">
+                                <i class="fas fa-map-marker-alt text-white"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold mb-2 text-gold-100">Alamat Studio</h4>
+                                <p class="text-ivory-200 leading-relaxed">
+                                    Jl. Wedding Boulevard No. 123<br>
+                                    Pondok Indah, Jakarta Selatan<br>
+                                    DKI Jakarta 12345
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Phone -->
+                        <div class="flex items-start group">
+                            <div class="w-12 h-12 bg-gold-950 rounded-xl flex items-center justify-center mr-4 group-hover:bg-gold-900 transition-colors duration-300">
+                                <i class="fas fa-phone text-white"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold mb-2 text-gold-100">Telepon & WhatsApp</h4>
+                                <p class="text-ivory-200">+62 812-3456-7890</p>
+                                <p class="text-ivory-200">+62 821-9876-5432</p>
+                            </div>
+                        </div>
+
+                        <!-- Email -->
+                        <div class="flex items-start group">
+                            <div class="w-12 h-12 bg-gold-950 rounded-xl flex items-center justify-center mr-4 group-hover:bg-gold-900 transition-colors duration-300">
+                                <i class="fas fa-envelope text-white"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold mb-2 text-gold-100">Email</h4>
+                                <p class="text-ivory-200">info@royalweddingully.com</p>
+                                <p class="text-ivory-200">consultation@royalweddingully.com</p>
+                            </div>
+                        </div>
+
+                        <!-- Business Hours -->
+                        <div class="flex items-start group">
+                            <div class="w-12 h-12 bg-gold-950 rounded-xl flex items-center justify-center mr-4 group-hover:bg-gold-900 transition-colors duration-300">
+                                <i class="fas fa-clock text-white"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold mb-2 text-gold-100">Jam Operasional</h4>
+                                <div class="text-ivory-200 space-y-1">
+                                    <p>Senin - Jumat: 09:00 - 18:00</p>
+                                    <p>Sabtu: 09:00 - 16:00</p>
+                                    <p>Minggu: 10:00 - 15:00</p>
+                                    <p class="text-gold-200 text-sm">*Konsultasi by appointment</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Social Media & Quick Actions -->
+                    <div class="mt-12 pt-8 border-t border-navy-800">
+                        <h4 class="font-semibold mb-6 text-gold-100">Ikuti & Hubungi Kami</h4>
+                        <div class="grid grid-cols-2 gap-4">
+                            <!-- WhatsApp Button -->
+                            <a href="https://wa.me/6281234567890" target="_blank" class="bg-green-600 hover:bg-green-700 text-white px-4 py-3 rounded-xl flex items-center justify-center transition-all duration-300 transform hover:-translate-y-1">
+                                <i class="fab fa-whatsapp mr-2"></i>
+                                <span class="text-sm font-semibold">WhatsApp</span>
+                            </a>
+                            
+                            <!-- Instagram Button -->
+                            <a href="https://instagram.com/royalweddingully" target="_blank" class="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white px-4 py-3 rounded-xl flex items-center justify-center transition-all duration-300 transform hover:-translate-y-1">
+                                <i class="fab fa-instagram mr-2"></i>
+                                <span class="text-sm font-semibold">Instagram</span>
+                            </a>
+                        </div>
+                        
+                        <div class="flex space-x-4 mt-6 justify-center">
+                            <a href="#" class="w-12 h-12 bg-navy-800 hover:bg-gold-950 rounded-xl flex items-center justify-center text-ivory-200 hover:text-white transition-all duration-300 transform hover:-translate-y-1">
+                                <i class="fab fa-facebook text-lg"></i>
+                            </a>
+                            <a href="#" class="w-12 h-12 bg-navy-800 hover:bg-gold-950 rounded-xl flex items-center justify-center text-ivory-200 hover:text-white transition-all duration-300 transform hover:-translate-y-1">
+                                <i class="fab fa-youtube text-lg"></i>
+                            </a>
+                            <a href="#" class="w-12 h-12 bg-navy-800 hover:bg-gold-950 rounded-xl flex items-center justify-center text-ivory-200 hover:text-white transition-all duration-300 transform hover:-translate-y-1">
+                                <i class="fab fa-tiktok text-lg"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Response Time Badge -->
+                    <div class="mt-8 bg-gold-950/20 border border-gold-950/30 rounded-xl p-4">
+                        <div class="flex items-center">
+                            <i class="fas fa-bolt text-gold-400 mr-3"></i>
+                            <div>
+                                <p class="text-gold-100 font-semibold">Response Time</p>
+                                <p class="text-gold-200 text-sm">Rata-rata 2 jam saat jam operasional</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Additional Information -->
+        <div class="mt-16 text-center">
+            <div class="scroll-animate bg-gradient-to-r from-gold-50 to-dustyrose-50 rounded-2xl p-8 md:p-12">
+                <div class="max-w-4xl mx-auto">
+                    <h3 class="text-2xl md:text-3xl font-playfair font-bold text-navy-950 mb-4">
+                        Kenapa Memilih Royal Wedding by Ully Sjah?
+                    </h3>
+                    <div class="grid md:grid-cols-3 gap-8 mt-8">
+                        <div class="text-center">
+                            <div class="w-16 h-16 bg-gold-950 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-certificate text-white text-xl"></i>
+                            </div>
+                            <h4 class="font-semibold text-navy-950 mb-2">Berpengalaman 10+ Tahun</h4>
+                            <p class="text-neutral-600 text-sm">Telah menangani 150+ pernikahan dengan tingkat kepuasan 98%</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="w-16 h-16 bg-gold-950 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-handshake text-white text-xl"></i>
+                            </div>
+                            <h4 class="font-semibold text-navy-950 mb-2">Konsultasi Gratis</h4>
+                            <p class="text-neutral-600 text-sm">Dapatkan sesi konsultasi pertama secara gratis tanpa komitmen</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="w-16 h-16 bg-gold-950 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-shield-alt text-white text-xl"></i>
+                            </div>
+                            <h4 class="font-semibold text-navy-950 mb-2">Garansi Kepuasan</h4>
+                            <p class="text-neutral-600 text-sm">Kami berkomitmen memberikan hasil terbaik untuk hari istimewa Anda</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

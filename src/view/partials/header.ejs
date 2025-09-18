@@ -1,0 +1,126 @@
+<!-- Header Navigation -->
+<nav class="bg-white/95 backdrop-blur-lg shadow-elegant fixed w-full top-0 z-50 border-b border-neutral-100/50">
+    <div class="container-custom">
+        <div class="flex justify-between items-center py-4 lg:py-5">
+            <!-- Logo & Brand -->
+            <div class="flex items-center space-x-3">
+                <div class="flex flex-col">
+                    <h1 class="text-2xl lg:text-3xl font-playfair font-bold text-gradient-royal">
+                        Royal Wedding
+                    </h1>
+                    <span class="text-gold-950 text-sm lg:text-base font-montserrat font-medium -mt-1">
+                        by Ully Sjah
+                    </span>
+                </div>
+                <!-- Optional Logo Icon -->
+                <div class="hidden sm:block w-10 h-10 bg-gradient-to-br from-gold-950 to-gold-700 rounded-full flex items-center justify-center">
+                    <i class="fas fa-crown text-white text-lg"></i>
+                </div>
+            </div>
+
+            <!-- Desktop Navigation -->
+            <div class="hidden lg:flex items-center space-x-8">
+                <a href="#home" class="nav-link" data-scroll="home">Home</a>
+                <a href="#about" class="nav-link" data-scroll="about">About</a>
+                <a href="#portfolio" class="nav-link" data-scroll="portfolio">Portfolio</a>
+                <a href="#services" class="nav-link" data-scroll="services">Services</a>
+                <a href="#testimonials" class="nav-link" data-scroll="testimonials">Testimonials</a>
+                <a href="#contact" class="nav-link" data-scroll="contact">Contact</a>
+            </div>
+
+            <!-- CTA Button & Mobile Menu -->
+            <div class="flex items-center space-x-4">
+                <!-- CTA Button (Hidden on mobile) -->
+                <a href="#contact" class="hidden lg:inline-flex btn btn-primary btn-sm">
+                    <i class="fas fa-calendar-alt mr-2"></i>
+                    Book Consultation
+                </a>
+
+                <!-- Mobile Menu Button -->
+                <button 
+                    onclick="toggleMobileMenu()" 
+                    class="lg:hidden w-10 h-10 flex items-center justify-center rounded-lg border border-neutral-200 text-navy-950 hover:bg-navy-50 focus:outline-none focus:ring-2 focus:ring-gold-950 transition-all duration-300"
+                    aria-label="Toggle mobile menu"
+                >
+                    <i class="fas fa-bars text-lg mobile-menu-icon"></i>
+                    <i class="fas fa-times text-lg mobile-menu-close hidden"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile Menu Overlay -->
+    <div 
+        id="mobileMenuOverlay" 
+        class="mobile-menu-overlay hidden"
+        onclick="toggleMobileMenu()"
+    ></div>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="mobile-menu">
+        <!-- Mobile Menu Header -->
+        <div class="p-6 border-b border-neutral-100">
+            <div class="flex items-center justify-between">
+                <div class="flex flex-col">
+                    <h2 class="text-xl font-playfair font-bold text-navy-950">Royal Wedding</h2>
+                    <span class="text-gold-950 text-sm font-medium">by Ully Sjah</span>
+                </div>
+                <button 
+                    onclick="toggleMobileMenu()" 
+                    class="w-8 h-8 flex items-center justify-center text-neutral-600 hover:text-navy-950"
+                    aria-label="Close menu"
+                >
+                    <i class="fas fa-times text-lg"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Links -->
+        <div class="p-6 space-y-4">
+            <a href="#home" class="block py-3 text-lg font-medium text-navy-950 hover:text-gold-950 transition-colors border-b border-neutral-100 last:border-0" onclick="toggleMobileMenu()" data-scroll="home">
+                <i class="fas fa-home w-6 mr-3 text-gold-950"></i>
+                Home
+            </a>
+            <a href="#about" class="block py-3 text-lg font-medium text-navy-950 hover:text-gold-950 transition-colors border-b border-neutral-100 last:border-0" onclick="toggleMobileMenu()" data-scroll="about">
+                <i class="fas fa-user w-6 mr-3 text-gold-950"></i>
+                About
+            </a>
+            <a href="#portfolio" class="block py-3 text-lg font-medium text-navy-950 hover:text-gold-950 transition-colors border-b border-neutral-100 last:border-0" onclick="toggleMobileMenu()" data-scroll="portfolio">
+                <i class="fas fa-images w-6 mr-3 text-gold-950"></i>
+                Portfolio
+            </a>
+            <a href="#services" class="block py-3 text-lg font-medium text-navy-950 hover:text-gold-950 transition-colors border-b border-neutral-100 last:border-0" onclick="toggleMobileMenu()" data-scroll="services">
+                <i class="fas fa-heart w-6 mr-3 text-gold-950"></i>
+                Services
+            </a>
+            <a href="#testimonials" class="block py-3 text-lg font-medium text-navy-950 hover:text-gold-950 transition-colors border-b border-neutral-100 last:border-0" onclick="toggleMobileMenu()" data-scroll="testimonials">
+                <i class="fas fa-star w-6 mr-3 text-gold-950"></i>
+                Testimonials
+            </a>
+            <a href="#contact" class="block py-3 text-lg font-medium text-navy-950 hover:text-gold-950 transition-colors border-b border-neutral-100 last:border-0" onclick="toggleMobileMenu()" data-scroll="contact">
+                <i class="fas fa-envelope w-6 mr-3 text-gold-950"></i>
+                Contact
+            </a>
+        </div>
+
+        <!-- Mobile CTA -->
+        <div class="p-6 border-t border-neutral-100">
+            <a href="#contact" class="btn btn-primary w-full justify-center" onclick="toggleMobileMenu()">
+                <i class="fas fa-calendar-alt mr-2"></i>
+                Book Your Dream Wedding
+            </a>
+        </div>
+
+        <!-- Mobile Contact Info -->
+        <div class="p-6 bg-neutral-50 text-center space-y-2">
+            <p class="text-sm text-neutral-600">Ready to plan your dream wedding?</p>
+            <a href="tel:+6281234567890" class="text-gold-950 font-medium text-sm hover:underline">
+                <i class="fas fa-phone mr-1"></i>
+                +62 812-3456-7890
+            </a>
+        </div>
+    </div>
+</nav>
+
+<!-- Navbar spacer to prevent content overlap -->
+<div class="h-20 lg:h-24"></div>

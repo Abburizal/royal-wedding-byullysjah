@@ -1,0 +1,255 @@
+<!-- Portfolio Gallery -->
+<section id="portfolio" class="section bg-white">
+    <div class="container-custom">
+        <!-- Section Header -->
+        <div class="text-center mb-16">
+            <div class="flex items-center justify-center mb-6">
+                <div class="h-px bg-gradient-to-r from-transparent via-gold-950 to-transparent w-24"></div>
+                <div class="mx-4 w-8 h-8 bg-gold-950 rounded-full flex items-center justify-center">
+                    <i class="fas fa-images text-white text-sm"></i>
+                </div>
+                <div class="h-px bg-gradient-to-r from-transparent via-gold-950 to-transparent w-24"></div>
+            </div>
+            <h2 class="text-3xl md:text-4xl lg:text-5xl font-playfair font-bold text-navy-950 mb-6">
+                Portfolio Kami
+            </h2>
+            <p class="text-lg text-neutral-600 max-w-3xl mx-auto leading-relaxed">
+                Setiap pernikahan adalah karya seni yang unik. Lihat koleksi momen-momen 
+                indah yang telah kami ciptakan untuk pasangan-pasangan istimewa.
+            </p>
+        </div>
+
+        <!-- Portfolio Filter -->
+        <div class="flex flex-wrap justify-center gap-4 mb-12">
+            <button class="portfolio-filter active px-6 py-2 rounded-full border-2 border-gold-950 text-gold-950 font-medium transition-all duration-300 hover:bg-gold-950 hover:text-white" data-filter="all">
+                Semua
+            </button>
+            <button class="portfolio-filter px-6 py-2 rounded-full border-2 border-neutral-300 text-neutral-600 font-medium transition-all duration-300 hover:border-gold-950 hover:text-gold-950" data-filter="outdoor">
+                Outdoor
+            </button>
+            <button class="portfolio-filter px-6 py-2 rounded-full border-2 border-neutral-300 text-neutral-600 font-medium transition-all duration-300 hover:border-gold-950 hover:text-gold-950" data-filter="indoor">
+                Indoor
+            </button>
+            <button class="portfolio-filter px-6 py-2 rounded-full border-2 border-neutral-300 text-neutral-600 font-medium transition-all duration-300 hover:border-gold-950 hover:text-gold-950" data-filter="traditional">
+                Traditional
+            </button>
+            <button class="portfolio-filter px-6 py-2 rounded-full border-2 border-neutral-300 text-neutral-600 font-medium transition-all duration-300 hover:border-gold-950 hover:text-gold-950" data-filter="modern">
+                Modern
+            </button>
+        </div>
+
+        <!-- Portfolio Grid -->
+        <div class="portfolio-grid">
+            <!-- Portfolio Item 1 -->
+            <div class="portfolio-item scroll-animate" data-category="outdoor traditional" onclick="openLightbox(1)">
+                <div class="aspect-portfolio bg-gradient-to-br from-gold-950/20 via-dustyrose-950/30 to-navy-950/40 rounded-xl relative overflow-hidden group">
+                    <!-- Image placeholder -->
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <div class="text-center text-white z-10">
+                            <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4 backdrop-blur-sm">
+                                <i class="fas fa-leaf text-2xl"></i>
+                            </div>
+                            <h3 class="text-xl font-playfair font-semibold mb-2">Royal Garden Wedding</h3>
+                            <p class="text-sm opacity-90">Outdoor • Traditional</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Overlay -->
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-content">
+                            <h4 class="text-xl font-playfair font-bold mb-2">Royal Garden Wedding</h4>
+                            <p class="text-sm opacity-90 mb-4">Pernikahan outdoor dengan konsep taman kerajaan yang memukau</p>
+                            <div class="flex items-center space-x-4 text-sm">
+                                <span><i class="fas fa-users mr-1"></i> 200 Tamu</span>
+                                <span><i class="fas fa-calendar mr-1"></i> Jakarta</span>
+                            </div>
+                        </div>
+                        <div class="absolute top-6 right-6 w-10 h-10 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm">
+                            <i class="fas fa-search-plus text-white"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Portfolio Item 2 -->
+            <div class="portfolio-item scroll-animate" data-category="indoor traditional" onclick="openLightbox(2)">
+                <div class="aspect-portfolio bg-gradient-to-br from-navy-950/40 via-maroon-950/30 to-gold-950/20 rounded-xl relative overflow-hidden group">
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <div class="text-center text-white z-10">
+                            <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4 backdrop-blur-sm">
+                                <i class="fas fa-church text-2xl"></i>
+                            </div>
+                            <h3 class="text-xl font-playfair font-semibold mb-2">Classic Cathedral</h3>
+                            <p class="text-sm opacity-90">Indoor • Traditional</p>
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-content">
+                            <h4 class="text-xl font-playfair font-bold mb-2">Classic Cathedral</h4>
+                            <p class="text-sm opacity-90 mb-4">Pernikahan gereja dengan dekorasi klasik yang megah</p>
+                            <div class="flex items-center space-x-4 text-sm">
+                                <span><i class="fas fa-users mr-1"></i> 300 Tamu</span>
+                                <span><i class="fas fa-calendar mr-1"></i> Bandung</span>
+                            </div>
+                        </div>
+                        <div class="absolute top-6 right-6 w-10 h-10 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm">
+                            <i class="fas fa-search-plus text-white"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Portfolio Item 3 -->
+            <div class="portfolio-item scroll-animate" data-category="indoor modern" onclick="openLightbox(3)">
+                <div class="aspect-portfolio bg-gradient-to-br from-dustyrose-950/30 via-gold-950/20 to-navy-950/40 rounded-xl relative overflow-hidden group">
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <div class="text-center text-white z-10">
+                            <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4 backdrop-blur-sm">
+                                <i class="fas fa-crown text-2xl"></i>
+                            </div>
+                            <h3 class="text-xl font-playfair font-semibold mb-2">Royal Ballroom</h3>
+                            <p class="text-sm opacity-90">Indoor • Modern</p>
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-content">
+                            <h4 class="text-xl font-playfair font-bold mb-2">Royal Ballroom</h4>
+                            <p class="text-sm opacity-90 mb-4">Ballroom mewah dengan konsep kerajaan modern</p>
+                            <div class="flex items-center space-x-4 text-sm">
+                                <span><i class="fas fa-users mr-1"></i> 250 Tamu</span>
+                                <span><i class="fas fa-calendar mr-1"></i> Surabaya</span>
+                            </div>
+                        </div>
+                        <div class="absolute top-6 right-6 w-10 h-10 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm">
+                            <i class="fas fa-search-plus text-white"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Portfolio Item 4 -->
+            <div class="portfolio-item scroll-animate" data-category="indoor modern" onclick="openLightbox(4)">
+                <div class="aspect-portfolio bg-gradient-to-br from-maroon-950/40 via-navy-950/30 to-dustyrose-950/20 rounded-xl relative overflow-hidden group">
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <div class="text-center text-white z-10">
+                            <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4 backdrop-blur-sm">
+                                <i class="fas fa-glass-cheers text-2xl"></i>
+                            </div>
+                            <h3 class="text-xl font-playfair font-semibold mb-2">Intimate Reception</h3>
+                            <p class="text-sm opacity-90">Indoor • Modern</p>
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-content">
+                            <h4 class="text-xl font-playfair font-bold mb-2">Intimate Reception</h4>
+                            <p class="text-sm opacity-90 mb-4">Resepsi intim dengan dekorasi minimalis modern</p>
+                            <div class="flex items-center space-x-4 text-sm">
+                                <span><i class="fas fa-users mr-1"></i> 100 Tamu</span>
+                                <span><i class="fas fa-calendar mr-1"></i> Bali</span>
+                            </div>
+                        </div>
+                        <div class="absolute top-6 right-6 w-10 h-10 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm">
+                            <i class="fas fa-search-plus text-white"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Portfolio Item 5 -->
+            <div class="portfolio-item scroll-animate" data-category="outdoor modern" onclick="openLightbox(5)">
+                <div class="aspect-portfolio bg-gradient-to-br from-gold-950/30 via-navy-950/20 to-maroon-950/40 rounded-xl relative overflow-hidden group">
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <div class="text-center text-white z-10">
+                            <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4 backdrop-blur-sm">
+                                <i class="fas fa-heart text-2xl"></i>
+                            </div>
+                            <h3 class="text-xl font-playfair font-semibold mb-2">Beach Romance</h3>
+                            <p class="text-sm opacity-90">Outdoor • Modern</p>
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-content">
+                            <h4 class="text-xl font-playfair font-bold mb-2">Beach Romance</h4>
+                            <p class="text-sm opacity-90 mb-4">Pernikahan pantai dengan konsep romantis modern</p>
+                            <div class="flex items-center space-x-4 text-sm">
+                                <span><i class="fas fa-users mr-1"></i> 150 Tamu</span>
+                                <span><i class="fas fa-calendar mr-1"></i> Lombok</span>
+                            </div>
+                        </div>
+                        <div class="absolute top-6 right-6 w-10 h-10 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm">
+                            <i class="fas fa-search-plus text-white"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Portfolio Item 6 -->
+            <div class="portfolio-item scroll-animate" data-category="outdoor traditional" onclick="openLightbox(6)">
+                <div class="aspect-portfolio bg-gradient-to-br from-navy-950/30 via-dustyrose-950/40 to-gold-950/20 rounded-xl relative overflow-hidden group">
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <div class="text-center text-white z-10">
+                            <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4 backdrop-blur-sm">
+                                <i class="fas fa-star text-2xl"></i>
+                            </div>
+                            <h3 class="text-xl font-playfair font-semibold mb-2">Luxury Outdoor</h3>
+                            <p class="text-sm opacity-90">Outdoor • Traditional</p>
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-content">
+                            <h4 class="text-xl font-playfair font-bold mb-2">Luxury Outdoor</h4>
+                            <p class="text-sm opacity-90 mb-4">Pernikahan outdoor mewah dengan tradisi adat</p>
+                            <div class="flex items-center space-x-4 text-sm">
+                                <span><i class="fas fa-users mr-1"></i> 400 Tamu</span>
+                                <span><i class="fas fa-calendar mr-1"></i> Yogyakarta</span>
+                            </div>
+                        </div>
+                        <div class="absolute top-6 right-6 w-10 h-10 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm">
+                            <i class="fas fa-search-plus text-white"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Load More Button -->
+        <div class="text-center mt-12">
+            <button class="btn btn-outline hover-lift">
+                <i class="fas fa-plus mr-2"></i>
+                Lihat Portfolio Lainnya
+            </button>
+        </div>
+
+        <!-- Achievement Banner -->
+        <div class="mt-20 bg-gradient-to-r from-navy-950 to-maroon-950 rounded-2xl p-8 lg:p-12 text-white text-center">
+            <h3 class="text-2xl lg:text-3xl font-playfair font-bold mb-6">
+                Prestasi yang Membanggakan
+            </h3>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-8">
+                <div class="group">
+                    <div class="text-4xl lg:text-5xl font-bold text-gold-950 mb-2 group-hover:scale-110 transition-transform">
+                        500+
+                    </div>
+                    <div class="text-base lg:text-lg opacity-90">Pernikahan Berhasil</div>
+                </div>
+                <div class="group border-l border-r border-white/20 sm:border-l-0 sm:border-r-0 sm:border-t sm:border-b md:border-t-0 md:border-b-0 md:border-l md:border-r py-4 sm:py-0 md:py-4 lg:py-0">
+                    <div class="text-4xl lg:text-5xl font-bold text-gold-950 mb-2 group-hover:scale-110 transition-transform">
+                        50+
+                    </div>
+                    <div class="text-base lg:text-lg opacity-90">Award & Penghargaan</div>
+                </div>
+                <div class="group">
+                    <div class="text-4xl lg:text-5xl font-bold text-gold-950 mb-2 group-hover:scale-110 transition-transform">
+                        100%
+                    </div>
+                    <div class="text-base lg:text-lg opacity-90">Kepuasan Klien</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
