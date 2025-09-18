@@ -13,26 +13,29 @@
     <!-- Navigation -->
     <%- include('../partials/header') %>
 
-    <!-- Hero Section -->
-    <%- include('../partials/hero') %>
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <%- include('../partials/hero') %>
 
-    <!-- About Section -->
-    <%- include('../partials/about') %>
+        <!-- About Section -->
+        <%- include('../partials/about') %>
 
-    <!-- Portfolio Gallery -->
-    <%- include('../partials/portfolio') %>
+        <!-- Portfolio Gallery -->
+        <%- include('../partials/portfolio') %>
 
-    <!-- Services Section -->
-    <%- include('../partials/services') %>
+        <!-- Services Section -->
+        <%- include('../partials/services') %>
 
-    <!-- Testimonials -->
-    <%- include('../partials/testimonials') %>
+        <!-- Testimonials -->
+        <%- include('../partials/testimonials') %>
 
-    <!-- Process Timeline -->
-    <%- include('../partials/process') %>
+        <!-- Process Timeline -->
+        <%- include('../partials/process') %>
 
-    <!-- Contact & CTA -->
-    <%- include('../partials/contact') %>
+        <!-- Contact & CTA -->
+        <%- include('../partials/contact') %>
+    </main>
 
     <!-- Footer -->
     <%- include('../partials/footer') %>
@@ -40,6 +43,7 @@
     <!-- Lightbox -->
     <%- include('../partials/lightbox') %>
 
-    <script src="/js/main.js"></script>
+    <!-- Load optimized JavaScript -->
+    <script src="/js/<%= process.env.NODE_ENV === 'production' ? 'main.min.js' : 'main.js' %>"></script>
 </body>
 </html>

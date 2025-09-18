@@ -38,7 +38,7 @@
 
                 <!-- Mobile Menu Button -->
                 <button 
-                    onclick="toggleMobileMenu()" 
+                    data-mobile-menu="toggle"
                     class="lg:hidden w-10 h-10 flex items-center justify-center rounded-lg border border-neutral-200 text-navy-950 hover:bg-navy-50 focus:outline-none focus:ring-2 focus:ring-gold-950 transition-all duration-300"
                     aria-label="Toggle mobile menu"
                 >
@@ -53,7 +53,6 @@
     <div 
         id="mobileMenuOverlay" 
         class="mobile-menu-overlay hidden"
-        onclick="toggleMobileMenu()"
     ></div>
 
     <!-- Mobile Menu -->
@@ -66,7 +65,7 @@
                     <span class="text-gold-950 text-sm font-medium">by Ully Sjah</span>
                 </div>
                 <button 
-                    onclick="toggleMobileMenu()" 
+                    data-mobile-menu="toggle"
                     class="w-8 h-8 flex items-center justify-center text-neutral-600 hover:text-navy-950"
                     aria-label="Close menu"
                 >
@@ -77,27 +76,27 @@
 
         <!-- Mobile Navigation Links -->
         <div class="p-6 space-y-4">
-            <a href="#home" class="block py-3 text-lg font-medium text-navy-950 hover:text-gold-950 transition-colors border-b border-neutral-100 last:border-0" onclick="toggleMobileMenu()" data-scroll="home">
+            <a href="#home" class="mobile-nav-link block py-3 text-lg font-medium text-navy-950 hover:text-gold-950 transition-colors border-b border-neutral-100 last:border-0" data-scroll="home" data-mobile-scroll="home">
                 <i class="fas fa-home w-6 mr-3 text-gold-950"></i>
                 Home
             </a>
-            <a href="#about" class="block py-3 text-lg font-medium text-navy-950 hover:text-gold-950 transition-colors border-b border-neutral-100 last:border-0" onclick="toggleMobileMenu()" data-scroll="about">
+            <a href="#about" class="mobile-nav-link block py-3 text-lg font-medium text-navy-950 hover:text-gold-950 transition-colors border-b border-neutral-100 last:border-0" data-scroll="about" data-mobile-scroll="about">
                 <i class="fas fa-user w-6 mr-3 text-gold-950"></i>
                 About
             </a>
-            <a href="#portfolio" class="block py-3 text-lg font-medium text-navy-950 hover:text-gold-950 transition-colors border-b border-neutral-100 last:border-0" onclick="toggleMobileMenu()" data-scroll="portfolio">
+            <a href="#portfolio" class="mobile-nav-link block py-3 text-lg font-medium text-navy-950 hover:text-gold-950 transition-colors border-b border-neutral-100 last:border-0" data-scroll="portfolio" data-mobile-scroll="portfolio">
                 <i class="fas fa-images w-6 mr-3 text-gold-950"></i>
                 Portfolio
             </a>
-            <a href="#services" class="block py-3 text-lg font-medium text-navy-950 hover:text-gold-950 transition-colors border-b border-neutral-100 last:border-0" onclick="toggleMobileMenu()" data-scroll="services">
+            <a href="#services" class="mobile-nav-link block py-3 text-lg font-medium text-navy-950 hover:text-gold-950 transition-colors border-b border-neutral-100 last:border-0" data-scroll="services" data-mobile-scroll="services">
                 <i class="fas fa-heart w-6 mr-3 text-gold-950"></i>
                 Services
             </a>
-            <a href="#testimonials" class="block py-3 text-lg font-medium text-navy-950 hover:text-gold-950 transition-colors border-b border-neutral-100 last:border-0" onclick="toggleMobileMenu()" data-scroll="testimonials">
+            <a href="#testimonials" class="mobile-nav-link block py-3 text-lg font-medium text-navy-950 hover:text-gold-950 transition-colors border-b border-neutral-100 last:border-0" data-scroll="testimonials" data-mobile-scroll="testimonials">
                 <i class="fas fa-star w-6 mr-3 text-gold-950"></i>
                 Testimonials
             </a>
-            <a href="#contact" class="block py-3 text-lg font-medium text-navy-950 hover:text-gold-950 transition-colors border-b border-neutral-100 last:border-0" onclick="toggleMobileMenu()" data-scroll="contact">
+            <a href="#contact" class="mobile-nav-link block py-3 text-lg font-medium text-navy-950 hover:text-gold-950 transition-colors border-b border-neutral-100 last:border-0" data-scroll="contact" data-mobile-scroll="contact">
                 <i class="fas fa-envelope w-6 mr-3 text-gold-950"></i>
                 Contact
             </a>
@@ -105,7 +104,7 @@
 
         <!-- Mobile CTA -->
         <div class="p-6 border-t border-neutral-100">
-            <a href="#contact" class="btn btn-primary w-full justify-center" onclick="toggleMobileMenu()">
+            <a href="#contact" class="mobile-cta-btn btn btn-primary w-full justify-center">
                 <i class="fas fa-calendar-alt mr-2"></i>
                 Book Your Dream Wedding
             </a>

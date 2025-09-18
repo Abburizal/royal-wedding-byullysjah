@@ -1,0 +1,30 @@
+{
+  "timestamp": "2025-09-18T22:10:31.559Z",
+  "assets": {
+    "css": {
+      "style.css": {
+        "size": "50.53 KB",
+        "isMinified": true,
+        "status": "Good"
+      }
+    },
+    "js": {
+      "main.js": {
+        "size": "25.78 KB",
+        "isMinified": false,
+        "status": "Good"
+      },
+      "main.min.js": {
+        "size": "14.01 KB",
+        "isMinified": true,
+        "status": "Good"
+      }
+    },
+    "images": {
+      "status": "No images directory found"
+    }
+  },
+  "recommendations": [
+    "Create images directory structure: /public/assets/images/"
+  ]
+}

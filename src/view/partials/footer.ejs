@@ -271,39 +271,8 @@
     <button 
         id="backToTop"
         class="fixed bottom-8 right-8 w-12 h-12 bg-gradient-to-r from-gold-950 to-gold-900 text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 opacity-0 pointer-events-none z-50"
-        onclick="scrollToTop()"
+        aria-label="Back to top"
     >
         <i class="fas fa-chevron-up"></i>
     </button>
 </footer>
-
-<script>
-// Back to Top Button Functionality
-window.addEventListener('scroll', function() {
-    const backToTop = document.getElementById('backToTop');
-    if (window.scrollY > 300) {
-        backToTop.classList.remove('opacity-0', 'pointer-events-none');
-        backToTop.classList.add('opacity-100', 'pointer-events-auto');
-    } else {
-        backToTop.classList.add('opacity-0', 'pointer-events-none');
-        backToTop.classList.remove('opacity-100', 'pointer-events-auto');
-    }
-});
-
-function scrollToTop() {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-}
-
-// Newsletter Subscription
-document.querySelector('footer form').addEventListener('submit', function(e) {
-    e.preventDefault();
-    const email = this.querySelector('input[type="email"]').value;
-    
-    // Simple validation
-    if (email) {
-        // Here you would typically send the email to your backend
-        alert('Terima kasih! Anda telah berlangganan newsletter kami.');
-        this.reset();
-    }
-});
-</script>

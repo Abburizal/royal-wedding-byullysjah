@@ -41,18 +41,23 @@
         <!-- Portfolio Grid -->
         <div class="portfolio-grid">
             <!-- Portfolio Item 1 -->
-            <div class="portfolio-item scroll-animate" data-category="outdoor traditional" onclick="openLightbox(1)">
-                <div class="aspect-portfolio bg-gradient-to-br from-gold-950/20 via-dustyrose-950/30 to-navy-950/40 rounded-xl relative overflow-hidden group">
-                    <!-- Image placeholder -->
-                    <div class="absolute inset-0 flex items-center justify-center">
-                        <div class="text-center text-white z-10">
-                            <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4 backdrop-blur-sm">
-                                <i class="fas fa-leaf text-2xl"></i>
-                            </div>
-                            <h3 class="text-xl font-playfair font-semibold mb-2">Royal Garden Wedding</h3>
-                            <p class="text-sm opacity-90">Outdoor • Traditional</p>
-                        </div>
-                    </div>
+            <div class="portfolio-item scroll-animate" data-category="outdoor traditional" data-lightbox="1">
+                <div class="aspect-portfolio rounded-xl relative overflow-hidden group">
+                    <!-- Optimized Image with WebP support and lazy loading -->
+                    <picture>
+                        <source srcset="/assets/images/portfolio/royal-garden-wedding.webp" type="image/webp">
+                        <img 
+                            src="/assets/images/portfolio/royal-garden-wedding.jpg" 
+                            alt="Royal Garden Wedding - Outdoor Traditional Wedding by Royal Wedding by Ully Sjah"
+                            loading="lazy"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                            onload="this.style.opacity='1'"
+                            style="opacity:0; transition: opacity 0.3s ease-in-out;"
+                        >
+                    </picture>
+                    
+                    <!-- Fallback gradient background for when image is loading -->
+                    <div class="absolute inset-0 bg-gradient-to-br from-gold-950/20 via-dustyrose-950/30 to-navy-950/40"></div>
                     
                     <!-- Overlay -->
                     <div class="portfolio-overlay">
@@ -72,7 +77,7 @@
             </div>
 
             <!-- Portfolio Item 2 -->
-            <div class="portfolio-item scroll-animate" data-category="indoor traditional" onclick="openLightbox(2)">
+            <div class="portfolio-item scroll-animate" data-category="indoor traditional" data-lightbox="2">
                 <div class="aspect-portfolio bg-gradient-to-br from-navy-950/40 via-maroon-950/30 to-gold-950/20 rounded-xl relative overflow-hidden group">
                     <div class="absolute inset-0 flex items-center justify-center">
                         <div class="text-center text-white z-10">
@@ -101,7 +106,7 @@
             </div>
 
             <!-- Portfolio Item 3 -->
-            <div class="portfolio-item scroll-animate" data-category="indoor modern" onclick="openLightbox(3)">
+            <div class="portfolio-item scroll-animate" data-category="indoor modern" data-lightbox="3">
                 <div class="aspect-portfolio bg-gradient-to-br from-dustyrose-950/30 via-gold-950/20 to-navy-950/40 rounded-xl relative overflow-hidden group">
                     <div class="absolute inset-0 flex items-center justify-center">
                         <div class="text-center text-white z-10">
@@ -130,7 +135,7 @@
             </div>
 
             <!-- Portfolio Item 4 -->
-            <div class="portfolio-item scroll-animate" data-category="indoor modern" onclick="openLightbox(4)">
+            <div class="portfolio-item scroll-animate" data-category="indoor modern" data-lightbox="4">
                 <div class="aspect-portfolio bg-gradient-to-br from-maroon-950/40 via-navy-950/30 to-dustyrose-950/20 rounded-xl relative overflow-hidden group">
                     <div class="absolute inset-0 flex items-center justify-center">
                         <div class="text-center text-white z-10">
@@ -159,7 +164,7 @@
             </div>
 
             <!-- Portfolio Item 5 -->
-            <div class="portfolio-item scroll-animate" data-category="outdoor modern" onclick="openLightbox(5)">
+            <div class="portfolio-item scroll-animate" data-category="outdoor modern" data-lightbox="5">
                 <div class="aspect-portfolio bg-gradient-to-br from-gold-950/30 via-navy-950/20 to-maroon-950/40 rounded-xl relative overflow-hidden group">
                     <div class="absolute inset-0 flex items-center justify-center">
                         <div class="text-center text-white z-10">
@@ -188,7 +193,7 @@
             </div>
 
             <!-- Portfolio Item 6 -->
-            <div class="portfolio-item scroll-animate" data-category="outdoor traditional" onclick="openLightbox(6)">
+            <div class="portfolio-item scroll-animate" data-category="outdoor traditional" data-lightbox="6">
                 <div class="aspect-portfolio bg-gradient-to-br from-navy-950/30 via-dustyrose-950/40 to-gold-950/20 rounded-xl relative overflow-hidden group">
                     <div class="absolute inset-0 flex items-center justify-center">
                         <div class="text-center text-white z-10">

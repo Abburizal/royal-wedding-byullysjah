@@ -24,22 +24,37 @@
                 <div class="relative">
                     <!-- Main Image Card -->
                     <div class="relative bg-white rounded-2xl shadow-luxury p-6 transform rotate-1">
-                        <div class="aspect-golden bg-gradient-to-br from-gold-950/10 via-dustyrose-950/20 to-navy-950/10 rounded-xl flex items-center justify-center relative overflow-hidden">
-                            <!-- Placeholder for actual image -->
-                            <div class="text-center text-navy-950 z-10">
-                                <div class="w-24 h-24 bg-gold-950 rounded-full flex items-center justify-center mx-auto mb-6 shadow-elegant">
-                                    <i class="fas fa-crown text-white text-3xl"></i>
+                        <div class="aspect-golden rounded-xl relative overflow-hidden">
+                            <!-- Optimized Profile Image with WebP support -->
+                            <picture>
+                                <source srcset="/assets/images/about/ully-sjah-profile.webp" type="image/webp">
+                                <img 
+                                    src="/assets/images/about/ully-sjah-profile.jpg" 
+                                    alt="Ully Sjah - Certified Wedding Planner, Royal Wedding by Ully Sjah"
+                                    loading="lazy"
+                                    class="w-full h-full object-cover"
+                                    onload="this.style.opacity='1'"
+                                    style="opacity:0; transition: opacity 0.3s ease-in-out;"
+                                >
+                            </picture>
+                            
+                            <!-- Fallback content for when image is loading -->
+                            <div class="absolute inset-0 bg-gradient-to-br from-gold-950/10 via-dustyrose-950/20 to-navy-950/10 flex items-center justify-center">
+                                <div class="text-center text-navy-950 z-10">
+                                    <div class="w-24 h-24 bg-gold-950 rounded-full flex items-center justify-center mx-auto mb-6 shadow-elegant">
+                                        <i class="fas fa-crown text-white text-3xl"></i>
+                                    </div>
+                                    <h3 class="text-2xl font-playfair font-bold mb-2">Ully Sjah</h3>
+                                    <p class="text-lg font-medium text-gold-950 mb-4">Certified Wedding Planner</p>
+                                    <div class="flex justify-center space-x-2">
+                                        <div class="w-2 h-2 bg-gold-950 rounded-full"></div>
+                                        <div class="w-2 h-2 bg-gold-950 rounded-full"></div>
+                                        <div class="w-2 h-2 bg-gold-950 rounded-full"></div>
+                                    </div>
                                 </div>
-                                <h3 class="text-2xl font-playfair font-bold mb-2">Ully Sjah</h3>
-                                <p class="text-lg font-medium text-gold-950 mb-4">Certified Wedding Planner</p>
-                                <div class="flex justify-center space-x-2">
-                                    <div class="w-2 h-2 bg-gold-950 rounded-full"></div>
-                                    <div class="w-2 h-2 bg-gold-950 rounded-full"></div>
-                                    <div class="w-2 h-2 bg-gold-950 rounded-full"></div>
-                                </div>
+                                <!-- Background Pattern -->
+                                <div class="absolute inset-0 bg-pattern-dots opacity-30"></div>
                             </div>
-                            <!-- Background Pattern -->
-                            <div class="absolute inset-0 bg-pattern-dots opacity-30"></div>
                         </div>
                     </div>
 

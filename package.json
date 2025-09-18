@@ -2,10 +2,15 @@
   "scripts": {
     "dev:css": "npx tailwindcss -i ./src/css/input.css -o ./public/assets/css/style.css --watch",
     "build:css": "npx tailwindcss -i ./src/css/input.css -o ./public/assets/css/style.css --minify",
+    "build:js": "npx terser public/js/main.js -o public/js/main.min.js --compress --mangle",
     "dev:server": "nodemon server.js",
-    "start": "node server.js"
+    "start": "node server.js",
+    "build": "npm run build:css && npm run build:js",
+    "dev": "npm run dev:css & npm run dev:server",
+    "performance": "node performance-test.js"
   },
   "dependencies": {
+    "dotenv": "^17.2.2",
     "ejs": "^3.1.10",
     "express": "^5.1.0",
     "multer": "^2.0.2",
@@ -15,6 +20,7 @@
     "autoprefixer": "^10.4.0",
     "nodemon": "^3.1.10",
     "postcss": "^8.4.0",
-    "tailwindcss": "^3.4.0"
+    "tailwindcss": "^3.4.0",
+    "terser": "^5.44.0"
   }
 }
