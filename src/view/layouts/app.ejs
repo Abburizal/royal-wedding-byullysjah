@@ -1,16 +1,10 @@
-<!-- Content for Layout -->
-<% 
-    var pageTitle = 'Royal Wedding by Ully Sjah - Luxury Wedding Planner';
-    var pageDescription = 'Wedding planner profesional dengan pengalaman 10+ tahun. Mewujudkan pernikahan impian Anda dengan sentuhan kemewahan dan keanggunan yang tak terlupakan.';
-%>
-
 <!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= pageTitle %></title>
-    <meta name="description" content="<%= pageDescription %>">
+    <title><%= typeof title !== 'undefined' ? title : 'Royal Wedding by Ully Sjah - Luxury Wedding Planner' %></title>
+    <meta name="description" content="<%= typeof description !== 'undefined' ? description : 'Wedding planner profesional dengan pengalaman 10+ tahun. Mewujudkan pernikahan impian Anda dengan sentuhan kemewahan dan keanggunan.' %>">
     
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -98,35 +92,23 @@
 
     <!-- Main Content -->
     <main role="main">
-        <!-- Hero Section -->
-        <%- include('../partials/hero') %>
-
-        <!-- About Section -->
-        <%- include('../partials/about') %>
-
-        <!-- Portfolio Gallery -->
-        <%- include('../partials/portfolio') %>
-
-        <!-- Services Section -->
-        <%- include('../partials/services') %>
-
-        <!-- Testimonials -->
-        <%- include('../partials/testimonials') %>
-
-        <!-- Process Timeline -->
-        <%- include('../partials/process') %>
-
-        <!-- Contact & CTA -->
-        <%- include('../partials/contact') %>
+        <%- body %>
     </main>
 
     <!-- Footer -->
     <%- include('../partials/footer') %>
 
-    <!-- Lightbox Modal -->
+    <!-- Lightbox Modal (if needed) -->
     <%- include('../partials/lightbox') %>
 
     <!-- Load optimized JavaScript -->
     <script src="/js/<%= process.env.NODE_ENV === 'production' ? 'main.min.js' : 'main.js' %>"></script>
+    
+    <!-- Additional Scripts (if provided) -->
+    <% if (typeof scripts !== 'undefined') { %>
+        <% scripts.forEach(function(script) { %>
+            <script src="<%= script %>"></script>
+        <% }); %>
+    <% } %>
 </body>
 </html>

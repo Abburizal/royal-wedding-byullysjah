@@ -1,25 +1,25 @@
 <!-- Header Navigation -->
 <nav class="bg-white/95 backdrop-blur-lg shadow-elegant fixed w-full top-0 z-50 border-b border-neutral-100/50">
     <div class="container-custom">
-        <div class="flex justify-between items-center py-4 lg:py-5">
+        <div class="flex justify-between items-center py-5">
             <!-- Logo & Brand -->
             <div class="flex items-center space-x-3">
                 <div class="flex flex-col">
-                    <h1 class="text-2xl lg:text-3xl font-playfair font-bold text-gradient-royal">
+                    <h1 class="text-3xl font-playfair font-bold text-gradient-royal">
                         Royal Wedding
                     </h1>
-                    <span class="text-gold-950 text-sm lg:text-base font-montserrat font-medium -mt-1">
+                    <span class="text-gold-950 text-base font-montserrat font-medium -mt-1">
                         by Ully Sjah
                     </span>
                 </div>
                 <!-- Optional Logo Icon -->
-                <div class="hidden sm:block w-10 h-10 bg-gradient-to-br from-gold-950 to-gold-700 rounded-full flex items-center justify-center">
+                <div class="flex w-10 h-10 bg-gradient-to-br from-gold-950 to-gold-700 rounded-full items-center justify-center">
                     <i class="fas fa-crown text-white text-lg"></i>
                 </div>
             </div>
 
-            <!-- Desktop Navigation -->
-            <div class="hidden lg:flex items-center space-x-8">
+            <!-- Desktop Navigation - Always visible unless mobile-active -->
+            <div class="desktop-only flex items-center space-x-8">
                 <a href="#home" class="nav-link" data-scroll="home">Home</a>
                 <a href="#about" class="nav-link" data-scroll="about">About</a>
                 <a href="#portfolio" class="nav-link" data-scroll="portfolio">Portfolio</a>
@@ -30,20 +30,30 @@
 
             <!-- CTA Button & Mobile Menu -->
             <div class="flex items-center space-x-4">
-                <!-- CTA Button (Hidden on mobile) -->
-                <a href="#contact" class="hidden lg:inline-flex btn btn-primary btn-sm">
+                <!-- CTA Button (Desktop only) -->
+                <a href="#contact" class="desktop-only inline-flex btn btn-primary btn-sm">
                     <i class="fas fa-calendar-alt mr-2"></i>
                     Book Consultation
                 </a>
 
-                <!-- Mobile Menu Button -->
+                <!-- Mobile Menu Button - Only visible when mobile-active -->
                 <button 
                     data-mobile-menu="toggle"
-                    class="lg:hidden w-10 h-10 flex items-center justify-center rounded-lg border border-neutral-200 text-navy-950 hover:bg-navy-50 focus:outline-none focus:ring-2 focus:ring-gold-950 transition-all duration-300"
+                    class="mobile-only w-10 h-10 flex items-center justify-center rounded-lg border border-neutral-200 text-navy-950 hover:bg-navy-50 focus:outline-none focus:ring-2 focus:ring-gold-950 transition-all duration-300"
                     aria-label="Toggle mobile menu"
                 >
                     <i class="fas fa-bars text-lg mobile-menu-icon"></i>
                     <i class="fas fa-times text-lg mobile-menu-close hidden"></i>
+                </button>
+                
+                <!-- Manual Mobile Toggle Button (for demonstration) -->
+                <button 
+                    id="mobileToggleBtn"
+                    class="w-10 h-10 flex items-center justify-center rounded-lg border border-gold-950 text-gold-950 hover:bg-gold-50 focus:outline-none focus:ring-2 focus:ring-gold-950 transition-all duration-300"
+                    aria-label="Toggle mobile view"
+                    title="Toggle Mobile Mode (Ctrl+M)"
+                >
+                    <i class="fas fa-mobile-alt text-lg"></i>
                 </button>
             </div>
         </div>
@@ -60,9 +70,11 @@
         <!-- Mobile Menu Header -->
         <div class="p-6 border-b border-neutral-100">
             <div class="flex items-center justify-between">
-                <div class="flex flex-col">
-                    <h2 class="text-xl font-playfair font-bold text-navy-950">Royal Wedding</h2>
-                    <span class="text-gold-950 text-sm font-medium">by Ully Sjah</span>
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-gradient-to-br from-gold-950 to-gold-700 rounded-full flex items-center justify-center">
+                        <i class="fas fa-crown text-white text-lg"></i>
+                    </div>
+                    <span class="text-navy-950 text-lg font-montserrat font-medium">Menu</span>
                 </div>
                 <button 
                     data-mobile-menu="toggle"
@@ -122,4 +134,4 @@
 </nav>
 
 <!-- Navbar spacer to prevent content overlap -->
-<div class="h-20 lg:h-24"></div>
+<div class="h-24"></div>

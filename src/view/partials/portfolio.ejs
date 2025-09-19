@@ -3,7 +3,25 @@
     <div class="container-custom">
         <!-- Section Header -->
         <div class="text-center mb-16">
-            <div class="flex items-center justify-center mb-6">
+            <div                    <!-- Optimized Image with WebP support and responsive loading -->
+                    <picture>
+                        <source 
+                            srcset="/assets/images/portfolio/beachside-romance-wedding.webp 800w"
+                            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                            type="image/webp"
+                        >
+                        <img 
+                            src="/assets/images/portfolio/beachside-romance-wedding.jpg" 
+                            srcset="/assets/images/portfolio/beachside-romance-wedding.jpg 800w"
+                            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                            alt="Beachside Romance Wedding - Outdoor Modern Wedding by Royal Wedding by Ully Sjah"
+                            loading="lazy"
+                            class="responsive-img lazy-img w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                            data-loaded="false"
+                            onload="this.classList.add('loaded'); this.dataset.loaded='true';"
+                            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+                        >
+                    </picture> items-center justify-center mb-6">
                 <div class="h-px bg-gradient-to-r from-transparent via-gold-950 to-transparent w-24"></div>
                 <div class="mx-4 w-8 h-8 bg-gold-950 rounded-full flex items-center justify-center">
                     <i class="fas fa-images text-white text-sm"></i>
@@ -43,16 +61,23 @@
             <!-- Portfolio Item 1 -->
             <div class="portfolio-item scroll-animate" data-category="outdoor traditional" data-lightbox="1">
                 <div class="aspect-portfolio rounded-xl relative overflow-hidden group">
-                    <!-- Optimized Image with WebP support and lazy loading -->
+                    <!-- Optimized Image with WebP support and responsive loading -->
                     <picture>
-                        <source srcset="/assets/images/portfolio/royal-garden-wedding.webp" type="image/webp">
+                        <source 
+                            srcset="/assets/images/portfolio/royal-garden-wedding.webp 800w"
+                            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                            type="image/webp"
+                        >
                         <img 
                             src="/assets/images/portfolio/royal-garden-wedding.jpg" 
+                            srcset="/assets/images/portfolio/royal-garden-wedding.jpg 800w"
+                            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                             alt="Royal Garden Wedding - Outdoor Traditional Wedding by Royal Wedding by Ully Sjah"
                             loading="lazy"
-                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                            onload="this.style.opacity='1'"
-                            style="opacity:0; transition: opacity 0.3s ease-in-out;"
+                            class="responsive-img lazy-img w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                            data-loaded="false"
+                            onload="this.classList.add('loaded'); this.dataset.loaded='true';"
+                            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
                         >
                     </picture>
                     
@@ -78,20 +103,34 @@
 
             <!-- Portfolio Item 2 -->
             <div class="portfolio-item scroll-animate" data-category="indoor traditional" data-lightbox="2">
-                <div class="aspect-portfolio bg-gradient-to-br from-navy-950/40 via-maroon-950/30 to-gold-950/20 rounded-xl relative overflow-hidden group">
-                    <div class="absolute inset-0 flex items-center justify-center">
-                        <div class="text-center text-white z-10">
-                            <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4 backdrop-blur-sm">
-                                <i class="fas fa-church text-2xl"></i>
-                            </div>
-                            <h3 class="text-xl font-playfair font-semibold mb-2">Classic Cathedral</h3>
-                            <p class="text-sm opacity-90">Indoor • Traditional</p>
-                        </div>
-                    </div>
+                <div class="aspect-portfolio rounded-xl relative overflow-hidden group">
+                    <!-- Optimized Image with WebP support and responsive loading -->
+                    <picture>
+                        <source 
+                            srcset="/assets/images/portfolio/classic-cathedral-wedding.webp 800w"
+                            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                            type="image/webp"
+                        >
+                        <img 
+                            src="/assets/images/portfolio/classic-cathedral-wedding.jpg" 
+                            srcset="/assets/images/portfolio/classic-cathedral-wedding.jpg 800w"
+                            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                            alt="Classic Cathedral Wedding - Indoor Traditional Wedding by Royal Wedding by Ully Sjah"
+                            loading="lazy"
+                            class="responsive-img lazy-img w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                            data-loaded="false"
+                            onload="this.classList.add('loaded'); this.dataset.loaded='true';"
+                            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+                        >
+                    </picture>
                     
+                    <!-- Fallback gradient background for when image is loading -->
+                    <div class="absolute inset-0 bg-gradient-to-br from-navy-950/40 via-maroon-950/30 to-gold-950/20"></div>
+                    
+                    <!-- Overlay -->
                     <div class="portfolio-overlay">
                         <div class="portfolio-content">
-                            <h4 class="text-xl font-playfair font-bold mb-2">Classic Cathedral</h4>
+                            <h4 class="text-xl font-playfair font-bold mb-2">Classic Cathedral Wedding</h4>
                             <p class="text-sm opacity-90 mb-4">Pernikahan gereja dengan dekorasi klasik yang megah</p>
                             <div class="flex items-center space-x-4 text-sm">
                                 <span><i class="fas fa-users mr-1"></i> 300 Tamu</span>
@@ -107,21 +146,35 @@
 
             <!-- Portfolio Item 3 -->
             <div class="portfolio-item scroll-animate" data-category="indoor modern" data-lightbox="3">
-                <div class="aspect-portfolio bg-gradient-to-br from-dustyrose-950/30 via-gold-950/20 to-navy-950/40 rounded-xl relative overflow-hidden group">
-                    <div class="absolute inset-0 flex items-center justify-center">
-                        <div class="text-center text-white z-10">
-                            <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4 backdrop-blur-sm">
-                                <i class="fas fa-crown text-2xl"></i>
-                            </div>
-                            <h3 class="text-xl font-playfair font-semibold mb-2">Royal Ballroom</h3>
-                            <p class="text-sm opacity-90">Indoor • Modern</p>
-                        </div>
-                    </div>
+                <div class="aspect-portfolio rounded-xl relative overflow-hidden group">
+                    <!-- Optimized Image with WebP support and responsive loading -->
+                    <picture>
+                        <source 
+                            srcset="/assets/images/portfolio/modern-minimalist-wedding.webp 800w"
+                            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                            type="image/webp"
+                        >
+                        <img 
+                            src="/assets/images/portfolio/modern-minimalist-wedding.jpg" 
+                            srcset="/assets/images/portfolio/modern-minimalist-wedding.jpg 800w"
+                            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                            alt="Modern Minimalist Wedding - Indoor Modern Wedding by Royal Wedding by Ully Sjah"
+                            loading="lazy"
+                            class="responsive-img lazy-img w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                            data-loaded="false"
+                            onload="this.classList.add('loaded'); this.dataset.loaded='true';"
+                            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+                        >
+                    </picture>
                     
+                    <!-- Fallback gradient background for when image is loading -->
+                    <div class="absolute inset-0 bg-gradient-to-br from-dustyrose-950/30 via-gold-950/20 to-navy-950/40"></div>
+                    
+                    <!-- Overlay -->
                     <div class="portfolio-overlay">
                         <div class="portfolio-content">
-                            <h4 class="text-xl font-playfair font-bold mb-2">Royal Ballroom</h4>
-                            <p class="text-sm opacity-90 mb-4">Ballroom mewah dengan konsep kerajaan modern</p>
+                            <h4 class="text-xl font-playfair font-bold mb-2">Modern Minimalist Wedding</h4>
+                            <p class="text-sm opacity-90 mb-4">Pernikahan minimalis modern dengan dekorasi elegan</p>
                             <div class="flex items-center space-x-4 text-sm">
                                 <span><i class="fas fa-users mr-1"></i> 250 Tamu</span>
                                 <span><i class="fas fa-calendar mr-1"></i> Surabaya</span>
@@ -137,6 +190,7 @@
             <!-- Portfolio Item 4 -->
             <div class="portfolio-item scroll-animate" data-category="indoor modern" data-lightbox="4">
                 <div class="aspect-portfolio bg-gradient-to-br from-maroon-950/40 via-navy-950/30 to-dustyrose-950/20 rounded-xl relative overflow-hidden group">
+                    <!-- Placeholder content with optimized structure -->
                     <div class="absolute inset-0 flex items-center justify-center">
                         <div class="text-center text-white z-10">
                             <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4 backdrop-blur-sm">
@@ -147,6 +201,7 @@
                         </div>
                     </div>
                     
+                    <!-- Overlay -->
                     <div class="portfolio-overlay">
                         <div class="portfolio-content">
                             <h4 class="text-xl font-playfair font-bold mb-2">Intimate Reception</h4>
@@ -165,20 +220,27 @@
 
             <!-- Portfolio Item 5 -->
             <div class="portfolio-item scroll-animate" data-category="outdoor modern" data-lightbox="5">
-                <div class="aspect-portfolio bg-gradient-to-br from-gold-950/30 via-navy-950/20 to-maroon-950/40 rounded-xl relative overflow-hidden group">
-                    <div class="absolute inset-0 flex items-center justify-center">
-                        <div class="text-center text-white z-10">
-                            <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4 backdrop-blur-sm">
-                                <i class="fas fa-heart text-2xl"></i>
-                            </div>
-                            <h3 class="text-xl font-playfair font-semibold mb-2">Beach Romance</h3>
-                            <p class="text-sm opacity-90">Outdoor • Modern</p>
-                        </div>
-                    </div>
+                <div class="aspect-portfolio rounded-xl relative overflow-hidden group">
+                    <!-- Optimized Image with WebP support and lazy loading -->
+                    <picture>
+                        <source srcset="/assets/images/portfolio/beachside-romance-wedding.webp" type="image/webp">
+                        <img 
+                            src="/assets/images/portfolio/beachside-romance-wedding.jpg" 
+                            alt="Beachside Romance Wedding - Outdoor Modern Wedding by Royal Wedding by Ully Sjah"
+                            loading="lazy"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                            onload="this.style.opacity='1'"
+                            style="opacity:0; transition: opacity 0.3s ease-in-out;"
+                        >
+                    </picture>
                     
+                    <!-- Fallback gradient background for when image is loading -->
+                    <div class="absolute inset-0 bg-gradient-to-br from-gold-950/30 via-navy-950/20 to-maroon-950/40"></div>
+                    
+                    <!-- Overlay -->
                     <div class="portfolio-overlay">
                         <div class="portfolio-content">
-                            <h4 class="text-xl font-playfair font-bold mb-2">Beach Romance</h4>
+                            <h4 class="text-xl font-playfair font-bold mb-2">Beachside Romance Wedding</h4>
                             <p class="text-sm opacity-90 mb-4">Pernikahan pantai dengan konsep romantis modern</p>
                             <div class="flex items-center space-x-4 text-sm">
                                 <span><i class="fas fa-users mr-1"></i> 150 Tamu</span>
@@ -195,6 +257,7 @@
             <!-- Portfolio Item 6 -->
             <div class="portfolio-item scroll-animate" data-category="outdoor traditional" data-lightbox="6">
                 <div class="aspect-portfolio bg-gradient-to-br from-navy-950/30 via-dustyrose-950/40 to-gold-950/20 rounded-xl relative overflow-hidden group">
+                    <!-- Placeholder content with optimized structure -->
                     <div class="absolute inset-0 flex items-center justify-center">
                         <div class="text-center text-white z-10">
                             <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4 backdrop-blur-sm">
@@ -205,6 +268,7 @@
                         </div>
                     </div>
                     
+                    <!-- Overlay -->
                     <div class="portfolio-overlay">
                         <div class="portfolio-content">
                             <h4 class="text-xl font-playfair font-bold mb-2">Luxury Outdoor</h4>

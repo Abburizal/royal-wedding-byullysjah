@@ -25,16 +25,23 @@
                     <!-- Main Image Card -->
                     <div class="relative bg-white rounded-2xl shadow-luxury p-6 transform rotate-1">
                         <div class="aspect-golden rounded-xl relative overflow-hidden">
-                            <!-- Optimized Profile Image with WebP support -->
+                            <!-- Optimized Profile Image with WebP support and responsive loading -->
                             <picture>
-                                <source srcset="/assets/images/about/ully-sjah-profile.webp" type="image/webp">
+                                <source 
+                                    srcset="/assets/images/about/ully-sjah-profile.webp 600w"
+                                    sizes="(max-width: 768px) 80vw, (max-width: 1024px) 40vw, 30vw"
+                                    type="image/webp"
+                                >
                                 <img 
                                     src="/assets/images/about/ully-sjah-profile.jpg" 
+                                    srcset="/assets/images/about/ully-sjah-profile.jpg 600w"
+                                    sizes="(max-width: 768px) 80vw, (max-width: 1024px) 40vw, 30vw"
                                     alt="Ully Sjah - Certified Wedding Planner, Royal Wedding by Ully Sjah"
                                     loading="lazy"
-                                    class="w-full h-full object-cover"
-                                    onload="this.style.opacity='1'"
-                                    style="opacity:0; transition: opacity 0.3s ease-in-out;"
+                                    class="responsive-img lazy-img w-full h-full object-cover"
+                                    data-loaded="false"
+                                    onload="this.classList.add('loaded'); this.dataset.loaded='true';"
+                                    onerror="this.style.display='none';"
                                 >
                             </picture>
                             

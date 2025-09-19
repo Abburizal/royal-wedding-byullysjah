@@ -1,30 +1,32 @@
 {
-  "timestamp": "2025-09-18T22:10:31.559Z",
+  "timestamp": "2025-09-19T09:39:34.664Z",
   "assets": {
     "css": {
       "style.css": {
-        "size": "50.53 KB",
+        "size": "53.16 KB",
         "isMinified": true,
         "status": "Good"
       }
     },
     "js": {
       "main.js": {
-        "size": "25.78 KB",
+        "size": "44.05 KB",
         "isMinified": false,
         "status": "Good"
       },
       "main.min.js": {
-        "size": "14.01 KB",
+        "size": "20.76 KB",
         "isMinified": true,
         "status": "Good"
       }
     },
     "images": {
-      "status": "No images directory found"
+      "total": 0,
+      "webpCount": 0,
+      "webpPercentage": "0%",
+      "largeImages": 0,
+      "status": "Good"
     }
   },
-  "recommendations": [
-    "Create images directory structure: /public/assets/images/"
-  ]
+  "recommendations": []
 }

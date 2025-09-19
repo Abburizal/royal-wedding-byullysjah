@@ -1,7 +1,19 @@
 <!-- Hero Section -->
 <section id="home" class="relative min-h-screen flex items-center justify-center overflow-hidden">
-    <!-- Background with Gradient Overlay -->
-    <div class="absolute inset-0 hero-bg"></div>
+    <!-- Background with Modern Browser Support -->
+    <div class="absolute inset-0 hero-bg-fallback">
+        <style>
+            @supports (background-image: url('data:image/webp;base64,')) {
+                .hero-bg-fallback {
+                    background: linear-gradient(135deg, rgba(0,0,128,0.85) 0%, rgba(212,175,55,0.75) 50%, rgba(128,0,0,0.85) 100%), 
+                                url('/assets/images/hero/hero-background.webp');
+                    background-size: cover;
+                    background-position: center;
+                    background-attachment: fixed;
+                }
+            }
+        </style>
+    </div>
     <div class="hero-overlay"></div>
     
     <!-- Animated Background Elements -->
@@ -13,68 +25,61 @@
     </div>
 
     <!-- Main Content -->
-    <div class="relative z-10 container-custom text-center text-white">
+    <div class="relative z-10 container-custom text-center text-white px-4">
         <div class="max-w-5xl mx-auto">
             <!-- Main Heading -->
             <div class="scroll-animate mb-8">
-                <div class="flex items-center justify-center mb-4">
-                    <div class="h-px bg-gradient-to-r from-transparent via-gold-950 to-transparent w-24"></div>
-                    <div class="mx-4 w-8 h-8 bg-gold-950 rounded-full flex items-center justify-center">
-                        <i class="fas fa-crown text-white text-sm"></i>
+                <div class="flex items-center justify-center mb-6">
+                    <div class="h-px bg-gradient-to-r from-transparent via-gold-950 to-transparent w-16 sm:w-24"></div>
+                    <div class="mx-4 w-10 h-10 sm:w-12 sm:h-12 bg-gold-950 rounded-full flex items-center justify-center">
+                        <i class="fas fa-crown text-white text-sm sm:text-lg"></i>
                     </div>
-                    <div class="h-px bg-gradient-to-r from-transparent via-gold-950 to-transparent w-24"></div>
+                    <div class="h-px bg-gradient-to-r from-transparent via-gold-950 to-transparent w-16 sm:w-24"></div>
                 </div>
                 
-                <h1 class="font-playfair text-4xl md:text-6xl lg:text-7xl xl:text-8xl font-bold mb-4 text-shadow-lg leading-tight">
-                    Royal Wedding
+                <h1 class="font-playfair text-3xl sm:text-4xl md:text-6xl lg:text-7xl xl:text-8xl font-bold mb-4 sm:mb-6 text-shadow-lg leading-tight">
+                    Your Dream Wedding
                 </h1>
                 
-                <div class="flex items-center justify-center space-x-3 mb-6">
-                    <div class="h-px bg-gold-950 w-12"></div>
-                    <p class="text-gold-950 text-lg md:text-xl lg:text-2xl font-montserrat font-medium tracking-wider">
-                        by Ully Sjah
-                    </p>
-                    <div class="h-px bg-gold-950 w-12"></div>
-                </div>
+                <p class="text-gold-950 text-lg sm:text-xl md:text-2xl lg:text-3xl font-montserrat font-medium tracking-wider mb-3 sm:mb-4">
+                    Awaits You
+                </p>
             </div>
 
             <!-- Subtitle -->
-            <div class="scroll-animate mb-12" style="animation-delay: 0.2s;">
-                <p class="text-lg md:text-xl lg:text-2xl mb-6 font-light leading-relaxed max-w-4xl mx-auto text-ivory-50">
-                    Mewujudkan pernikahan impian Anda dengan sentuhan kemewahan dan keanggunan yang tak terlupakan
-                </p>
-                <p class="text-base md:text-lg text-ivory-100/90 max-w-2xl mx-auto leading-relaxed">
+            <div class="scroll-animate mb-8 sm:mb-12" style="animation-delay: 0.2s;">
+                <p class="text-base sm:text-lg md:text-xl lg:text-2xl mb-4 sm:mb-6 font-light leading-relaxed max-w-4xl mx-auto text-ivory-50 px-2">
                     Dengan pengalaman lebih dari 10 tahun, kami menghadirkan layanan wedding planner terpercaya untuk momen paling berharga dalam hidup Anda.
                 </p>
             </div>
 
             <!-- Call to Action Buttons -->
-            <div class="scroll-animate mb-16" style="animation-delay: 0.4s;">
-                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                    <a href="#contact" class="btn btn-primary btn-lg group">
+            <div class="scroll-animate mb-12 sm:mb-16" style="animation-delay: 0.4s;">
+                <div class="flex flex-col space-y-3 sm:flex-row sm:gap-4 sm:space-y-0 justify-center items-center px-4">
+                    <a href="#contact" class="btn btn-primary btn-lg group w-full sm:w-auto">
                         <i class="fas fa-calendar-alt mr-2 group-hover:scale-110 transition-transform"></i>
                         Konsultasi Gratis
                         <i class="fas fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform"></i>
                     </a>
-                    <a href="#portfolio" class="btn btn-secondary btn-lg group">
+                    <a href="#portfolio" class="btn btn-secondary btn-lg group w-full sm:w-auto">
                         <i class="fas fa-images mr-2 group-hover:scale-110 transition-transform"></i>
                         Lihat Portfolio
                     </a>
                 </div>
                 
                 <!-- Trust Indicators -->
-                <div class="mt-8 flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-8 text-ivory-100/80">
+                <div class="mt-6 sm:mt-8 flex flex-col space-y-3 sm:flex-row sm:space-y-0 sm:space-x-8 items-center justify-center text-ivory-100/80">
                     <div class="flex items-center space-x-2">
                         <i class="fas fa-star text-gold-950"></i>
-                        <span class="text-sm">500+ Pernikahan Sukses</span>
+                        <span class="text-xs sm:text-sm">500+ Pernikahan Sukses</span>
                     </div>
                     <div class="flex items-center space-x-2">
                         <i class="fas fa-award text-gold-950"></i>
-                        <span class="text-sm">Best Wedding Planner 2023</span>
+                        <span class="text-xs sm:text-sm">Best Wedding Planner 2023</span>
                     </div>
                     <div class="flex items-center space-x-2">
                         <i class="fas fa-heart text-gold-950"></i>
-                        <span class="text-sm">100% Kepuasan Klien</span>
+                        <span class="text-xs sm:text-sm">100% Kepuasan Klien</span>
                     </div>
                 </div>
             </div>
@@ -92,10 +97,10 @@
     </div>
 
     <!-- Social Proof Bar -->
-    <div class="absolute bottom-0 left-0 right-0 bg-white/10 backdrop-blur-sm border-t border-white/20 py-4">
-        <div class="container-custom">
-            <div class="flex flex-col md:flex-row items-center justify-between text-center md:text-left space-y-2 md:space-y-0">
-                <div class="flex items-center space-x-6 text-ivory-100/90 text-sm">
+    <div class="absolute bottom-0 left-0 right-0 bg-white/10 backdrop-blur-sm border-t border-white/20 py-4 sm:py-4">
+        <div class="container-custom px-4">
+            <div class="flex flex-col space-y-3 sm:flex-row sm:space-y-0 items-center justify-between text-center sm:text-left">
+                <div class="flex flex-col space-y-2 sm:flex-row sm:space-y-0 sm:space-x-6 items-center text-ivory-100/90 text-xs sm:text-sm">
                     <div class="flex items-center space-x-2">
                         <i class="fas fa-phone text-gold-950"></i>
                         <span>+62 812-3456-7890</span>
@@ -106,15 +111,15 @@
                     </div>
                 </div>
                 <div class="flex items-center space-x-4">
-                    <span class="text-ivory-100/70 text-sm">Follow Us:</span>
-                    <a href="#" class="w-8 h-8 bg-white/10 hover:bg-gold-950 rounded-full flex items-center justify-center transition-all duration-300 group">
-                        <i class="fab fa-instagram text-ivory-100 group-hover:text-white text-sm"></i>
+                    <span class="text-ivory-100/70 text-xs sm:text-sm">Follow Us:</span>
+                    <a href="#" class="w-7 h-7 sm:w-8 sm:h-8 bg-white/10 hover:bg-gold-950 rounded-full flex items-center justify-center transition-all duration-300 group">
+                        <i class="fab fa-instagram text-ivory-100 group-hover:text-white text-xs sm:text-sm"></i>
                     </a>
-                    <a href="#" class="w-8 h-8 bg-white/10 hover:bg-gold-950 rounded-full flex items-center justify-center transition-all duration-300 group">
-                        <i class="fab fa-facebook text-ivory-100 group-hover:text-white text-sm"></i>
+                    <a href="#" class="w-7 h-7 sm:w-8 sm:h-8 bg-white/10 hover:bg-gold-950 rounded-full flex items-center justify-center transition-all duration-300 group">
+                        <i class="fab fa-facebook text-ivory-100 group-hover:text-white text-xs sm:text-sm"></i>
                     </a>
-                    <a href="#" class="w-8 h-8 bg-white/10 hover:bg-gold-950 rounded-full flex items-center justify-center transition-all duration-300 group">
-                        <i class="fab fa-whatsapp text-ivory-100 group-hover:text-white text-sm"></i>
+                    <a href="#" class="w-7 h-7 sm:w-8 sm:h-8 bg-white/10 hover:bg-gold-950 rounded-full flex items-center justify-center transition-all duration-300 group">
+                        <i class="fab fa-whatsapp text-ivory-100 group-hover:text-white text-xs sm:text-sm"></i>
                     </a>
                 </div>
             </div>

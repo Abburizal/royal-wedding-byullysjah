@@ -1,0 +1,37 @@
+{
+  "timestamp": "2025-09-19T09:51:43.869Z",
+  "mobileCSSAnalysis": {
+    "responsiveBreakpoints": {
+      "sm:": 1,
+      "md:": 17,
+      "lg:": 17,
+      "xl:": 0,
+      "2xl:": 0
+    },
+    "mobileActiveClasses": 46,
+    "hasTouchFriendlyButtons": true,
+    "status": "Good"
+  },
+  "viewportConfiguration": {
+    "hasViewportMeta": true,
+    "hasCorrectViewport": true,
+    "status": "Good"
+  },
+  "touchTargets": {},
+  "mobilePerformance": {},
+  "recommendations": [],
+  "mobileJavaScript": {
+    "hasMobileController": true,
+    "hasTouchHandling": false,
+    "hasOrientationChange": true,
+    "hasViewportListener": true,
+    "status": "Good"
+  },
+  "imageOptimization": {
+    "totalImages": 12,
+    "webpImages": 6,
+    "jpgImages": 6,
+    "webpPercentage": 50,
+    "status": "Good"
+  }
+}
